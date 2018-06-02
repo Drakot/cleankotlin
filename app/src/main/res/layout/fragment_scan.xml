@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+  <LinearLayout
+      android:id="@+id/llAction"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/llMenu"
+      android:layout_centerInParent="true"
+      android:layout_marginEnd="25dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="@dimen/margin"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+    <es.demokt.kotlindemoproject.modules.scan.camera.CameraSourcePreview2
+        android:id="@+id/camera_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        tools:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/llCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        tools:visibility="visible"
+        >
+      <EditText
+          android:id="@+id/etCode"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center_horizontal"
+          android:maxLines="1"
+          android:hint="@string/code"
+          android:minEms="10"
+          />
+      <Button
+          android:id="@+id/btOk"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:background="@color/colorPrimary"
+          android:text="@android:string/ok"
+          android:textColor="@android:color/white"
+          />
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/llMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/main_toolbar"
+      android:layout_margin="@dimen/margin"
+      >
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_photo_camera"
+        android:tint="@color/black"
+        />
+    <Space
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/ivManual"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_keyboard"
+        android:tint="@color/black"
+        />
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources>
+  <string name="app_name">demotWiki</string>
+  <string name="loading">Cargando...</string>
+  <string name="register">Registrarse</string>
+  <string name="home">Home</string>
+  <string name="confirm_password">Confirm password</string>
+  <string name="name">Nombre</string>
+  <string name="menu_dashboard">Dashboard</string>
+  <string name="menu_scanner">Scanner</string>
+  <string name="logout">Salir</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="no_data">No hay resultados</string>
+  <string name="login">Entrar</string>
+  <string name="email">Email</string>
+  <string name="password">Contraseña</string>
+  <string name="change">Cambiar</string>
+  <string name="no_camera_permission">No has aceptado los permisos de la camara</string>
+  <string name="permission_camera_rationale">Los permisos de la camara son necesarios para continuar</string>
+  <string name="error_low_storage_error">No tienes suficiente espacio</string>
+  <string name="permission_rationale_title">Permiso</string>
+  <string name="permission_rationale_message">Aceptar este permiso es necesario para el conrrecto funcionamiento de la aplicación</string>
+  <string name="code">Codigo</string>
+  <string name="insert_code">Insertar codigo</string>
+  <string name="add_product">Añadir Producto</string>
+  <string name="title_add_product">Alta/Ficha Producto</string>
+  <string name="title_add_supplier">Alta/Ficha Proveedores</string>
+  <string name="results">Resultados</string>
+
+  <string name="media_option_picture">Cámara</string>
+  <string name="media_option_gallery">Galeria</string>
+  <string name="select_item">Selecciona una opción</string>
+  <string name="product_ean">EAN</string>
+  <string name="product_name">Nombre</string>
+  <string name="product_price">Price</string>
+  <string name="product_reference">Referencia</string>
+  <string name="product_observation">Obs.</string>
+  <string name="product_provider">Proveedor</string>
+  <string name="product_save">Guardar</string>
+  <string name="product_exit">Salir</string>
+  <string name="stores">Tiendas</string>
+  <string name="suppliers">Proveedores</string>
+  <string name="select_supplier">Seleccionar proveedor</string>
+  <string name="error_mandatort_field">Todos los campos son obligatorios</string>
+  <string name="internal_storage">Almacenamiento interno</string>
+  <string name="supplier_business_name">Razón social</string>
+  <string name="demokt_wiki_id">demokt_wiki_id</string>
+  <string name="surname">Apellido</string>
+  <string name="no_records">No existen registros</string>
+</resources>

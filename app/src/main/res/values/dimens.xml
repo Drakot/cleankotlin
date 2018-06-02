@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="margin">16dp</dimen>
+  <dimen name="separator_size">1dp</dimen>
+  <dimen name="margin_button_right">10dp</dimen>
+  <dimen name="margin_large">15dp</dimen>
+  <dimen name="margin_extra_large">25dp</dimen>
+  <dimen name="margin_small">8dp</dimen>
+  <dimen name="margin_medium">12dp</dimen>
+  <dimen name="picture_height">60dp</dimen>
+  <dimen name="picture_big_height">120dp</dimen>
+  <dimen name="border_size">1dp</dimen>
+</resources>

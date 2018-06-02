@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#F57C00</color>
+  <color name="colorPrimaryDark">#EF6C00</color>
+  <color name="colorAccent">#263238</color>
+  <color name="message_error">#EA4335</color>
+  <color name="black">#333333</color>
+  <color name="grey">#666666</color>
+  <color name="white">#FFFFFF</color>
+  <color name="greyWhited">#eeeeee</color>
+  <color name="foreground_material_light">#ffffff</color>
+  <color name="orange">#f3a83d</color>
+  <color name="chart_line">#4fb3c7</color>
+
+</resources>

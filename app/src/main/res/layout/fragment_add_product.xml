@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyWhited"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingBottom="20dp"
+      >
+
+    <LinearLayout
+        android:id="@+id/imgListPrev"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <HorizontalScrollView
+          android:id="@+id/svPicturesPreview"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:background="@color/greyWhited"
+          >
+
+        <LinearLayout
+            android:id="@+id/imageListPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/picture_big_height"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+      </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_ean"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <EditText
+          android:id="@+id/tvProductEan"
+          android:hint="@string/product_ean"
+          android:maxLines="1"
+          style="@style/AddProduct.FieldItemValue"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_name"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <EditText
+          android:id="@+id/tvProductName"
+          android:hint="@string/product_name"
+          tools:text="IPAD MINI"
+          style="@style/AddProduct.FieldItemValue"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_price"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <EditText
+          android:id="@+id/tvProductPrice"
+          android:hint="@string/product_price"
+          android:inputType="numberDecimal"
+          tools:text="200,34€"
+          style="@style/AddProduct.FieldItemValue"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_reference"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <EditText
+          android:id="@+id/tvProductReference"
+          android:hint="@string/product_reference"
+          tools:text="44444"
+          style="@style/AddProduct.FieldItemValue"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_observation"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <EditText
+          android:id="@+id/tvProductObservation"
+          android:hint="@string/product_observation"
+          tools:text="44444"
+          style="@style/AddProduct.FieldItemValue"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProvider"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/white"
+        style="@style/AddProduct.FieldItemContainer"
+        >
+      <TextView
+          android:text="@string/product_provider"
+          style="@style/AddProduct.FieldItemTitle"
+          />
+      <View
+          style="@style/AddProduct.FieldItemSeparator"
+          />
+      <TextView
+          android:id="@+id/tvProductProvider"
+          android:text="@string/select_supplier"
+          style="@style/AddProduct.FieldItemValue"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_chevron_right_black_24dp"
+          />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSelectPicture"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scaleType="center"
+        android:src="@drawable/ic_photo_camera"
+        android:tint="@color/black"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/svPictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyWhited"
+        >
+
+      <LinearLayout
+          android:id="@+id/llPictures"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:orientation="horizontal"
+          >
+      </LinearLayout>
+    </HorizontalScrollView>
+  </LinearLayout>
+</ScrollView>

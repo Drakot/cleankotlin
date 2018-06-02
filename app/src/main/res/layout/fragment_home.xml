@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyWhited"
+    >
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:background="@android:color/white"
+          android:baselineAligned="false"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:paddingBottom="15dp"
+          android:paddingEnd="8dp"
+          android:paddingStart="8dp"
+          android:paddingTop="15dp"
+          >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvScannedToday"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              android:text="-"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Escaneados Hoy"
+              android:textAlignment="center"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvCreatedToday"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="- | -%"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Productos creados"
+              android:textAlignment="center"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvEditedToday"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="-"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Productos editados"
+              android:textAlignment="center"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:background="@color/colorPrimary"
+          android:baselineAligned="false"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:paddingBottom="15dp"
+          android:paddingEnd="8dp"
+          android:paddingStart="8dp"
+          android:paddingTop="15dp"
+          >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvScannedDay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="-"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Escaneos al día"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvCreatedDay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="-"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Productos creados al día"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvEditedDay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="-"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              />
+          <TextView
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Prodcutos editados al día"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              />
+
+        </LinearLayout>
+
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:background="@color/colorPrimaryDark"
+          android:padding="10dp"
+          android:layout_marginTop="2dp"
+          android:textColor="@color/white"
+          android:text="Estadisticas de los últimos 15 días."
+          />
+      <com.github.mikephil.charting.charts.LineChart
+          android:id="@+id/chart"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="220dp"
+          android:visibility="visible"
+          tools:visibility="visible"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="20dp"
+          android:background="@color/white"
+          android:clickable="true"
+          android:layout_marginBottom="150dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/margin"
+
+          >
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_store"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:id="@+id/tvName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              tools:text="Store name"
+              />
+
+          <TextView
+              android:id="@+id/tvAddress"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/grey"
+              tools:text="Direction"
+              />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llChange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_row"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="8dp"
+              android:text="@string/change"
+              />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_chevron_right_black_24dp"
+              />
+        </LinearLayout>
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/btn_scanner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end|bottom"
+      android:layout_margin="16dp"
+      android:src="@drawable/ic_camera_enhance"
+      app:backgroundTint="@color/colorPrimary"
+      />
+</FrameLayout>
